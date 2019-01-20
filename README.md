@@ -4,13 +4,13 @@
 
 
 ### How to run:
-- Install dependencies: `npm i`;
-- Run the dev server: `npm run start`;
-- Test: `npm run test`;
-- Build: `npm run build`;
+- Install dependencies: `yarn install`;
+- Run the dev server: `yarn start`;
+- Test: `yarn test`;
+- Build: `yarn build`;
 
 ### Requires:
-- NPM 📦
+- Yarn 📦
 
 ### Tech stuff 👾:
 - React ⚛
