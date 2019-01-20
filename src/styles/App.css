@@ -9,18 +9,22 @@ body {
 	font-family: sans-serif;
 }
 
-a{
+a {
 	color: var(--brand-color);
 	transition: color .3s;
 }
 
-a:hover{
+a:hover {
 	color: var(--brand-color-dark);
 }
 
 /*HEADER*/
 .app-header {
 	text-align: center;
+	max-width: 1336px;
+	margin: 0 auto;
+	position: relative;
+	padding: 50px 15px 100px;
 }
 
 .app-header-logout, .app-header-back {
@@ -36,13 +40,13 @@ a:hover{
 	box-sizing: border-box;
 	cursor: pointer;
 	position: absolute;
-	right: 30px;
+	right: 15px;
 	top: 30px;
 }
 
-.app-header-back{
+.app-header-back {
 	right: auto;
-	left: 30px
+	left: 15px;
 }
 
 .app-header-logout:hover, .app-header-back:hover {
@@ -50,12 +54,8 @@ a:hover{
 	background: var(--brand-color-dark);
 }
 
-.app-header {
-	padding: 50px 0 100px;
-}
-
 /*LOGIN*/
-.app-login{
+.app-login {
 	padding-bottom: 150px;
 }
 
@@ -94,7 +94,7 @@ a:hover{
 	background: var(--brand-color-dark);
 }
 
-.app-login-error{
+.app-login-error {
 	background: rgba(235, 0, 0, 0.24);
 	color: #5F0000;
 	text-align: center;
@@ -106,7 +106,7 @@ a:hover{
 }
 
 /*SEARCH*/
-.app-search{
+.app-search {
 	padding: 0 15px 150px;
 	display: grid;
 	grid-template-columns: max-content 1fr;
@@ -115,9 +115,9 @@ a:hover{
 	margin: 0 auto;
 }
 
-.app-search-options{
+.app-search-options {
 	margin: 0;
-	padding:  0 100px 0 0;
+	padding: 0 100px 0 0;
 }
 
 .app-search-options label.mod-selected {
@@ -132,32 +132,32 @@ a:hover{
 	margin-right: 8px;
 }
 
-.app-search-options li{
+.app-search-options li {
 	display: block;
 	margin-bottom: 15px;
 }
 
-.app-search-filter{
+.app-search-filter {
 	grid-column: 1/3;
 }
 
-.app-search-item h3{
+.app-search-item h3 {
 	margin: 0;
 }
 
-.app-search-nofound,.app-search-loader{
+.app-search-nofound, .app-search-loader {
 	text-align: center;
 	grid-column: 1/-1;
 }
 
-.app-search-items{
+.app-search-items {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-auto-rows: max-content;
 	grid-gap: 15px;
 }
 
-.app-search-item{
+.app-search-item {
 	border-radius: 3px;
 	border: 1px solid #EEEEEE;
 	background: #EEEEEE;
@@ -172,20 +172,20 @@ a:hover{
 	margin: 0 auto;
 }
 
-.app-detail h1{
+.app-detail h1 {
 	text-align: center;
 }
 
-.app-detail b{
+.app-detail b {
 	text-transform: capitalize;
 }
 
-.app-detail ul{
+.app-detail ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.app-detail td{
+.app-detail td {
 	padding: 0 15px 15px 0;
 }

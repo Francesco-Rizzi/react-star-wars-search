@@ -5,11 +5,11 @@ export default class detailView extends React.Component {
 	render(){
 		
 		const {item} = this.props;
-		console.log(item);
+		
 		return <div className='app-detail'>
 			<h1>{item.name || item.title}</h1>
 			<table>
-				{Object.keys(item).map(k => this.renderProp(item, k))}
+				<tbody>{Object.keys(item).map(k => this.renderProp(item, k))}</tbody>
 			</table>
 		</div>;
 		
@@ -28,12 +28,16 @@ export default class detailView extends React.Component {
 			
 			case 'string':
 			case 'number':
-				return <tr key={key}><td><b>{key}:</b></td> <td>{renderSimpleValue(prop)}</td></tr>;
+				return <tr key={key}>
+					<td><b>{key}:</b></td>
+					<td>{renderSimpleValue(prop)}</td>
+				</tr>;
 			
 			//ASSUME 1 LEVEL ONLY
 			case 'object':
-				if(prop.length){
-					return <tr key={key}><td><b>{key}:</b></td>
+				if ( prop.length ) {
+					return <tr key={key}>
+						<td><b>{key}:</b></td>
 						<td>
 							<ul>
 								{prop.map(i => <li key={i}>{renderSimpleValue(i)}</li>)}
