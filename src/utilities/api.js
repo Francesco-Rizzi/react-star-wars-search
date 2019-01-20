@@ -13,7 +13,7 @@ const HTTPAPI = {
 		}).then(json => {
 			res = res.concat(json.results);
 			if ( json.next ) {
-			//	return this._request(json.next, res);
+				return this._request(json.next, res);
 			}
 			return res;
 		});
