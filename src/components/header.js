@@ -34,7 +34,7 @@ export default class Header extends React.Component {
 		
 		if ( appState === STATES.DETAIL ) {
 			return <button className="app-header-back" onClick={onBackAction}>
-				Back
+				← Back
 			</button>;
 		}
 		return <div></div>;

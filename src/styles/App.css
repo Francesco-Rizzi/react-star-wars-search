@@ -45,7 +45,7 @@ a:hover{
 	left: 30px
 }
 
-.app-header-logout:hover {
+.app-header-logout:hover, .app-header-back:hover {
 	text-decoration: underline;
 	background: var(--brand-color-dark);
 }
@@ -55,7 +55,7 @@ a:hover{
 }
 
 /*LOGIN*/
-.app-login, .app-search{
+.app-login{
 	padding-bottom: 150px;
 }
 
@@ -107,7 +107,7 @@ a:hover{
 
 /*SEARCH*/
 .app-search{
-	padding: 0 15px;
+	padding: 0 15px 150px;
 	display: grid;
 	grid-template-columns: max-content 1fr;
 	grid-gap: 15px;
