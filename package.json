@@ -2,6 +2,7 @@
   "name": "react-star-wars-search",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "/experiments/react-star-wars-search",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
