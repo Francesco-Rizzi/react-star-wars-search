@@ -16,8 +16,8 @@ export default class LoginView extends React.Component {
 	render(){
 		
 		return <form className='app-login' onSubmit={this.onSubmit.bind(this)}>
-			<input type='text' placeholder='Username' required name='username' value={this.state.username} onChange={e => this.setState({username : e.target.value})} />
-			<input type='password' placeholder='Password' required name='password' value={this.state.password} onChange={e => this.setState({password : e.target.value})} />
+			<input type='text' placeholder='Username (admin)' required name='username' value={this.state.username} onChange={e => this.setState({username : e.target.value})} />
+			<input type='password' placeholder='Password (admin)' required name='password' value={this.state.password} onChange={e => this.setState({password : e.target.value})} />
 			<button type='submit' className='app-login-btn'>login</button>
 			{this.state.error && <div className='app-login-error'>{this.state.error}</div>}
 		</form>;

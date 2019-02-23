@@ -8,6 +8,7 @@
 - Run the dev server: `yarn start`;
 - Test: `yarn test`;
 - Build: `yarn build`;
+- Use "admin" both as username and password.
 
 ### Requires:
 - Yarn 📦
