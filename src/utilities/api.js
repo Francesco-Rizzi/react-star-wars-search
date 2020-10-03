@@ -1,6 +1,6 @@
 const HTTPAPI = {
 	
-	baseEndpoint : "https://swapi.co/api/",
+	baseEndpoint : "https://swapi.dev/api/",
 	
 	request( option ){
 		return this._request(this.baseEndpoint + option.toLowerCase());
